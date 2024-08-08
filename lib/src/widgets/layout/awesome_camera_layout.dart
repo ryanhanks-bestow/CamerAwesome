@@ -31,10 +31,10 @@ class AwesomeCameraLayout extends StatelessWidget {
             (Column(
               children: [
                 const Spacer(),
-                if (state is PhotoCameraState && state.hasFilters)
-                  AwesomeFilterWidget(state: state)
-                else if (!kIsWeb && Platform.isAndroid)
-                  AwesomeZoomSelector(state: state),
+                // if (state is PhotoCameraState && state.hasFilters)
+                //   AwesomeFilterWidget(state: state)
+                // else if (!kIsWeb && Platform.isAndroid)
+                //   AwesomeZoomSelector(state: state),
                 AwesomeCameraModeSelector(state: state),
               ],
             )),
